@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything Claude Code - 完整的 Claude Code 配置集合</title>
+    <meta name="description" content="来自 Anthropic 黑客马拉松获胜者的完整 Claude Code 配置集合，包含 48 个智能体、183 个技能和 79 个命令">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-effects">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <div class="grid-pattern"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fas fa-code"></i></div>
+                <span class="logo-text">ECC</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">核心功能</a></li>
+                <li><a href="#installation">安装指南</a></li>
+                <li><a href="#agents">专业智能体</a></li>
+                <li><a href="#commands">快捷命令</a></li>
+                <li><a href="#ecosystem">生态系统</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="https://github.com/affaan-m/everything-claude-code" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-badge">
+            <i class="fas fa-award"></i>
+            <span>Anthropic 黑客松获胜者</span>
+        </div>
+        <h1 class="hero-title">
+            <span class="gradient-text">Everything</span>
+            <br>
+            <span class="highlight">Claude Code</span>
+        </h1>
+        <p class="hero-subtitle">
+            来自 Anthropic 黑客马拉松获胜者的完整 Claude Code 配置集合。包含 48 个智能体、183 个技能和 79 个命令，经过 10 个多月高强度日常使用与真实产品开发迭代打磨。
+        </p>
+        <div class="hero-cta">
+            <a href="#installation" class="btn btn-primary">
+                <i class="fas fa-download"></i>
+                <span>快速开始</span>
+            </a>
+            <a href="#features" class="btn btn-secondary">
+                <i class="fas fa-book-open"></i>
+                <span>了解更多</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-number">48</div>
+            <div class="stat-label">专业智能体</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">183</div>
+            <div class="stat-label">工作流技能</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">79</div>
+            <div class="stat-label">快捷命令</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">语言系统</div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="section-header">
+            <div class="section-badge">核心功能</div>
+            <h2 class="section-title">不止是配置文件</h2>
+            <p class="section-subtitle">一整套完整系统：技能体系、本能行为、记忆优化、持续学习、安全扫描，以及研究优先的开发模式</p>
+        </div>
+        <div class="ai-grid">
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-robot"></i></div>
+                    <h4>专业 Agent 体系</h4>
+                </div>
+                <p>36 个专用子智能体，涵盖代码审查、安全审计、构建修复、架构设计等专业领域。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-vial"></i></div>
+                    <h4>测试驱动开发</h4>
+                </div>
+                <p>遵循 TDD 方法论，红-绿-重构循环，确保代码质量与测试覆盖率。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-code-branch"></i></div>
+                    <h4>代码重构</h4>
+                </div>
+                <p>自动识别和清理无效代码，优化代码结构，提升可维护性。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>安全优先</h4>
+                </div>
+                <p>内置 AgentShield 安全审计工具，扫描配置漏洞、权限风险。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-sliders-h"></i></div>
+                    <h4>自定义技能</h4>
+                </div>
+                <p>从 Git 历史自动生成技能，基于直觉的持续学习系统。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-gauge-high"></i></div>
+                    <h4>性能优化</h4>
+                </div>
+                <p>智能上下文管理、Token 优化、模型选择策略。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-users"></i></div>
+                    <h4>团队协作</h4>
+                </div>
+                <p>多智能体协同调度、工作流编排、会话历史管理。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-repeat"></i></div>
+                    <h4>持续验证</h4>
+                </div>
+                <p>验证循环评估、检查点机制、pass@k 指标确保交付质量。</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-memory"></i></div>
+                    <h4>记忆持久化</h4>
+                </div>
+                <p>自动跨会话保存/加载上下文，智能学习用户模式。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation" class="section">
+        <div class="section-header">
+            <div class="section-badge">安装指南</div>
+            <h2 class="section-title">快速上手</h2>
+            <p class="section-subtitle">在 2 分钟内完成安装，开始使用强大的 AI 编码助手</p>
+        </div>
+        <div class="install-container">
+            <div class="install-tabs">
+                <button class="install-tab active" data-tab="tab-plugin">插件安装</button>
+                <button class="install-tab" data-tab="tab-manual">手动安装</button>
+                <button class="install-tab" data-tab="tab-windows">Windows</button>
+            </div>
+            <div id="tab-plugin" class="install-content active">
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <div class="code-dot red"></div>
+                            <div class="code-dot yellow"></div>
+                            <div class="code-dot green"></div>
+                        </div>
+                        <button class="copy-btn" data-code="code-plugin">
+                            <i class="fas fa-copy"></i>
+                            <span>复制</span>
+                        </button>
+                    </div>
+                    <div class="code-body">
+                        <pre id="code-plugin"><span class="comment"># 添加市场</span>
+<span class="command">/plugin</span> marketplace add <span class="value">https://github.com/affaan-m/everything-claude-code</span>
+
+<span class="comment"># 安装插件</span>
+<span class="command">/plugin</span> install <span class="value">everything-claude-code@everything-claude-code</span></pre>
+                    </div>
+                </div>
+                <div class="prereq-box">
+                    <h4><i class="fas fa-exclamation-triangle"></i> 重要提示</h4>
+                    <p>Claude Code 插件无法自动分发 rules。请手动复制规则目录到 ~/.claude/rules/</p>
+                </div>
+            </div>
+            <div id="tab-manual" class="install-content">
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <div class="code-dot red"></div>
+                            <div class="code-dot yellow"></div>
+                            <div class="code-dot green"></div>
+                        </div>
+                        <button class="copy-btn" data-code="code-manual">
+                            <i class="fas fa-copy"></i>
+                            <span>复制</span>
+                        </button>
+                    </div>
+                    <div class="code-body">
+                        <pre id="code-manual"><span class="comment"># 克隆仓库</span>
+<span class="command">git</span> clone <span class="value">https://github.com/affaan-m/everything-claude-code.git</span>
+<span class="command">cd</span> everything-claude-code
+
+<span class="comment"># 安装依赖</span>
+<span class="command">npm</span> install
+
+<span class="comment"># 复制规则（必需）</span>
+<span class="command">mkdir</span> <span class="flag">-p</span> ~/.claude/rules
+<span class="command">cp</span> <span class="flag">-R</span> rules/common ~/.claude/rules/
+<span class="command">cp</span> <span class="flag">-R</span> rules/typescript ~/.claude/rules/</pre>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-windows" class="install-content">
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <div class="code-dot red"></div>
+                            <div class="code-dot yellow"></div>
+                            <div class="code-dot green"></div>
+                        </div>
+                        <button class="copy-btn" data-code="code-windows">
+                            <i class="fas fa-copy"></i>
+                            <span>复制</span>
+                        </button>
+                    </div>
+                    <div class="code-body">
+                        <pre id="code-windows"><span class="comment"># 插件安装路径：只复制规则</span>
+<span class="command">New-Item</span> <span class="flag">-ItemType</span> Directory <span class="flag">-Force</span> <span class="flag">-Path</span> <span class="value">"$HOME/.claude/rules"</span> | Out-Null
+<span class="command">Copy-Item</span> <span class="flag">-Recurse</span> rules/common <span class="value">"$HOME/.claude/rules/"</span>
+<span class="command">Copy-Item</span> <span class="flag">-Recurse</span> rules/typescript <span class="value">"$HOME/.claude/rules/"</span></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agents" class="section">
+        <div class="section-header">
+            <div class="section-badge">专业智能体</div>
+            <h2 class="section-title">48 个专用子智能体</h2>
+            <p class="section-subtitle">涵盖代码审查、安全审计、构建修复、架构设计等专业领域</p>
+        </div>
+        <div class="ai-grid">
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <h4>规划师 (Planner)</h4>
+                </div>
+                <p>功能实现规划，分解复杂任务为可执行步骤</p>
+                <div class="code-snippet">/plan "添加用户认证"</div>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-building"></i></div>
+                    <h4>架构师 (Architect)</h4>
+                </div>
+                <p>系统架构设计决策，评估可扩展性与性能</p>
+                <div class="code-snippet">/architect "微服务设计"</div>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-vial"></i></div>
+                    <h4>TDD 指南 (TDD Guide)</h4>
+                </div>
+                <p>测试驱动开发方法论，红-绿-重构循环</p>
+                <div class="code-snippet">/tdd "用户登录功能"</div>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-search"></i></div>
+                    <h4>代码审查员 (Code Reviewer)</h4>
+                </div>
+                <p>代码质量与安全审查，确保代码规范</p>
+                <div class="code-snippet">/code-review</div>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h4>安全审查员 (Security Reviewer)</h4>
+                </div>
+                <p>漏洞分析与安全扫描，预防安全风险</p>
+                <div class="code-snippet">/security-scan</div>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-wrench"></i></div>
+                    <h4>构建修复器 (Build Error Resolver)</h4>
+                </div>
+                <p>自动诊断和修复构建错误</p>
+                <div class="code-snippet">/build-fix</div>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-code-branch"></i></div>
+                    <h4>重构清理器 (Refactor Cleaner)</h4>
+                </div>
+                <p>识别和清理无效代码，优化代码结构</p>
+                <div class="code-snippet">/refactor-clean</div>
+            </div>
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <div class="ai-card-icon"><i class="fas fa-file-edit"></i></div>
+                    <h4>文档更新器 (Doc Updater)</h4>
+                </div>
+                <p>文档同步更新与代码映射维护</p>
+                <div class="code-snippet">/update-docs</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="section">
+        <div class="section-header">
+            <div class="section-badge">快捷命令</div>
+            <h2 class="section-title">79 个实用命令</h2>
+            <p class="section-subtitle">覆盖开发全流程的快捷命令，提升编码效率</p>
+        </div>
+        <div class="commands-grid">
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-clipboard-list"></i></span>
+                <p><code>/plan</code> - 实现规划</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-vial"></i></span>
+                <p><code>/tdd</code> - 测试驱动开发</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-code-branch"></i></span>
+                <p><code>/refactor-clean</code> - 代码重构清理</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-search"></i></span>
+                <p><code>/code-review</code> - 代码质量审查</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-wrench"></i></span>
+                <p><code>/build-fix</code> - 修复构建错误</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-flask"></i></span>
+                <p><code>/e2e</code> - 生成端到端测试</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-book-open"></i></span>
+                <p><code>/learn</code> - 从会话中提取模式</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-check-circle"></i></span>
+                <p><code>/verify</code> - 运行验证循环</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-sliders-h"></i></span>
+                <p><code>/skill-create</code> - 从 Git 历史生成技能</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-memory"></i></span>
+                <p><code>/instinct-status</code> - 查看已学习本能</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-shield-alt"></i></span>
+                <p><code>/security-scan</code> - 安全审计扫描</p>
+            </div>
+            <div class="command-item">
+                <span class="command-icon"><i class="fas fa-users"></i></span>
+                <p><code>/multi-plan</code> - 多智能体任务拆解</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <div class="section-badge">工作流程</div>
+            <h2 class="section-title">如何使用</h2>
+            <p class="section-subtitle">简单四步，开启 AI 辅助开发之旅</p>
+        </div>
+        <div class="workflow-steps">
+            <div class="workflow-step">
+                <div class="step-number">1</div>
+                <h4>安装插件</h4>
+                <p>通过命令行安装 ECC 插件或手动复制配置文件</p>
+            </div>
+            <div class="workflow-step">
+                <div class="step-number">2</div>
+                <h4>配置规则</h4>
+                <p>复制规则目录到 ~/.claude/rules/，确保代码规范</p>
+            </div>
+            <div class="workflow-step">
+                <div class="step-number">3</div>
+                <h4>使用命令</h4>
+                <p>通过 /plan、/tdd 等命令开始 AI 辅助开发</p>
+            </div>
+            <div class="workflow-step">
+                <div class="step-number">4</div>
+                <h4>持续学习</h4>
+                <p>系统自动学习你的模式，不断优化工作流</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ecosystem" class="section">
+        <div class="section-header">
+            <div class="section-badge">生态系统</div>
+            <h2 class="section-title">配套工具</h2>
+            <p class="section-subtitle">完整的开发工具链，提升开发体验</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                <h3>AgentShield</h3>
+                <p>安全审计工具，扫描配置漏洞、权限风险，包含 1282 项测试、98% 覆盖率、102 条静态分析规则。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                <h3>技能创建器</h3>
+                <p>从 Git 历史自动生成技能，支持本地分析和 GitHub 应用两种模式。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>持续学习 v2</h3>
+                <p>基于直觉的学习系统，自动学习用户模式，支持置信度评分和技能进化。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Everything Claude Code</div>
+            <p class="footer-links">
+                <a href="https://github.com/affaan-m/everything-claude-code" target="_blank">GitHub</a>
+                <a href="https://x.com/affaanmustafa" target="_blank">作者</a>
+                <a href="CONTRIBUTING.md" target="_blank">贡献指南</a>
+            </p>
+            <p class="footer-copy">MIT License - 自由使用，根据需要修改</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
